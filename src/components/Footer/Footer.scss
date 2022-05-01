@@ -1,0 +1,59 @@
+@use '/src/styles/abstracts/' as *;
+
+.footer {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--clr-gray);
+  
+  &__link {
+    color: var(--clr-gray);
+
+    &:hover {
+      color: var(--clr-mustard);
+      transition: all 300ms ease-in-out;
+    }
+
+    &-fontsize {
+      font-size: 2em;
+
+      @include breakpoint-down('medium') {
+        font-size: 1em;
+      }
+    }
+
+    &-margin {
+      margin-top: 0.625rem;
+    }
+  }
+
+  &__primary {
+    // background-color: var(--clr-black);
+
+    &-list {
+      list-style: none;
+    }
+  }
+  &__media {
+    justify-content: space-between;
+  }
+
+  &__secondary {
+    // background-color: var(--clr-black);
+
+    &-legal {
+      text-align: start;
+
+      @include breakpoint-down('medium') {
+        text-align: center;
+      }
+    }
+
+    &-copyright {
+      text-align: right;
+
+      @include breakpoint-down('medium') {
+        text-align: center;
+      }
+    }
+  }
+}
