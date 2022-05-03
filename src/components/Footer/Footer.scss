@@ -9,15 +9,15 @@
     color: var(--clr-gray);
 
     &:hover {
-      color: var(--clr-mustard);
+      color: var(--clr-green);
       transition: all 300ms ease-in-out;
     }
 
     &-fontsize {
-      font-size: 2em;
+      font-size: 3em;
 
       @include breakpoint-down('medium') {
-        font-size: 1em;
+        font-size: 2em;
       }
     }
 
@@ -56,4 +56,8 @@
       }
     }
   }
+}
+
+ul {
+  padding-left: 0rem !important;
 }

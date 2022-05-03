@@ -11,11 +11,11 @@ export default function NotFound() {
   return (
     <div className="container-fluid mb-5 text-center margin-header">
       <Helmet>
-        <title>404 Not Found - PM GARCIA GONZALEZ</title>
-        <meta name="title" content="404 Not Found - PM GARCIA GONZALEZ" />
+        <title>404 Not Found - Fans Coffee & Bakery</title>
+        <meta name="title" content="404 Not Found - Fans Coffee & Bakery" />
         <meta
           name="description"
-          content="If you are seeing this message it means that you have not chosen the right path, you can go back to the home page."
+          content="Si ves este mensaje significa que no has elegido el camino correcto, puedes volver a la página de inicio."
         />
       </Helmet>
       <h1 className="mx-auto ">Error 404</h1>
@@ -24,11 +24,11 @@ export default function NotFound() {
         escrito mal la URL? Asegúrese de revisar su ortografía.
       </p>
 
-      <div className="container">
+      <div className="container mb-3">
         <Link to="/">
           <img
             className="notFound__img"
-            src="https://i.imgur.com/WYPT13x.png"
+            src="https://i.imgur.com/lDJZJoX.png"
             alt="404"
           />
         </Link>

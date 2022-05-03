@@ -1,18 +1,19 @@
-import React from "react";
+import {Link} from 'react-router-dom'
 
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light green">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img
-              src="https://i.imgur.com/pnORFqS.jpg"
+              src="https://i.imgur.com/Ayu94vl.png"
               alt=""
-              width="30"
-              height="24"
+              width="150"
+              className="ms-5"
+              // height="24"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,17 +26,21 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto text-center">
-              <a className="nav-link" aria-current="page" href="#">
-                Home
-              </a>
-              <a className="nav-link" href="#">
-                Features
-              </a>
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-              
-              
+              <Link className="nav-link" aria-current="page" to="/">
+                Inicio
+              </Link>
+              <Link className="nav-link" to="/tartas-personalizadas">
+                Tartas Personalizadas
+              </Link>
+              <Link className="nav-link" to="/productos">
+                Productos
+              </Link>
+              <Link className="nav-link" to="/pedidos">
+                Pedidos
+              </Link>
+              <Link className="nav-link" to="/contacto">
+                Contacto
+              </Link>
             </div>
           </div>
         </div>

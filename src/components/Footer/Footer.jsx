@@ -1,16 +1,16 @@
 import React from 'react';
 import './Footer.scss';
 import { Link } from 'react-router-dom';
-import {FaFacebook, FaTwitter} from 'react-icons/fa';
+import {FaFacebook, FaInstagram, FaMapMarkerAlt, FaMailBulk} from 'react-icons/fa';
 
 function Footer() {
   return (
     <div>
       <footer className="container-fluid footer">
         <div className="row text-center footer__primary">
-          <div className="col-4">
+          <div className="col-lg-4 col-md-12">
             <ul className="footer__primary-list">
-              <li className="footer__link-margin">
+              <li className="footer__link-margin ms-0">
                 <Link className="footer__link link" to="/">
                   Inicio
                 </Link>
@@ -27,7 +27,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-md-12">
             <ul className="footer__primary-list">
               <li className="footer__link-margin">
                 <Link className="footer__link link" to="/productos">
@@ -46,33 +46,33 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-4 footer__media container">
-            <div className="row justify-content-center py-3">
+          <div className="col-lg-4 col-md-12 footer__media container">
+            <div className="justify-content-center py-3">
               <a
-                className="footer__link my-3 col-lg-2"
+                className="footer__link m-3"
                 href="https://www.instagram.com/fanscoffeeandbakery/"
               >
-                <i className="footer__link-fontsize fab fa-instagram"></i>
+                <FaInstagram className='footer__link-fontsize' />
               </a>
               <a
-                className="footer__link my-3 col-lg-2"
+                className="footer__link m-3"
                 href="https://www.facebook.com/fanscoffeebakery"
               >
                 <FaFacebook className='footer__link-fontsize'/>
               </a>
               <a
                 href="mailto:fanscoffeebakery@gmail.com"
-                className="footer__link my-3 col-lg-2"
+                className="footer__link m-3"
               >
-                <FaFacebook className='footer__link-fontsize'/>
+                <FaMailBulk className='footer__link-fontsize'/>
               </a>
               <a
               href="#dondeestamos"
               data-bs-toggle="modal"
               data-bs-target="#dondeestamos"
-              className="footer__link my-3 col-lg-2"
+              className="footer__link m-3"
               >
-              <i className="mx-3 fas fa-map-marker-alt footer__link-fontsize"></i>
+              <FaMapMarkerAlt className='footer__link-fontsize' />
               </a>
             </div>
           </div>

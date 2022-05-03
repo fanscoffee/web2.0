@@ -1,0 +1,24 @@
+@use '/src/styles/abstracts/' as *;
+
+.contacto {
+
+
+  @include breakpoint-down(medium) {
+    margin: 1rem;
+  }
+
+  &__first {
+    @include breakpoint-down(medium) {
+      margin: 4rem 0;
+    }
+  }
+}
+
+// .link {
+//   color: var(--clr-mustard);
+
+//   &:hover {
+//     transform: scale(1.5);
+//     color: var(--clr-brown);
+//   }
+// }
