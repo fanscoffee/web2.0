@@ -31,7 +31,7 @@ export default function NotFound() {
           />
         </Link>
       </div>
-      <Link className="button" to="/contact">
+      <Link className="button" to="/contacto">
         Contacto
       </Link>
     </div>

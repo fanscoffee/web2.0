@@ -195,8 +195,8 @@ export default function Contacto() {
             <p>
               <strong>Atención al cliente: </strong>
             </p>
-            <a href="mailto:fans.osteleadiversa@gmail.com" className="link">
-              fans.osteleadiversa@gmail.com
+            <a href="mailto:fanscoffee22@gmail.com" className="link">
+              fanscoffee22@gmail.com
             </a>
           </div>
         </div>
