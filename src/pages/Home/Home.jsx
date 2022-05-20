@@ -1,3 +1,4 @@
+import Carousel from "../../components/Carousel/Carousel";
 import { Helmet } from "react-helmet";
 import Building from "../../components/Building/Building";
 
@@ -12,7 +13,7 @@ function Home() {
           content="En Fans Coffee & Bakery somos fans de ti, ven y disfruta de nuestros productos."
         />
       </Helmet>
-      <Building />
+      <Carousel />
     </div>
   );
 }

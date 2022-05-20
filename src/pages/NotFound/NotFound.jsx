@@ -11,11 +11,11 @@ export default function NotFound() {
   return (
     <div className="container-fluid mb-5 text-center margin-header">
       <Helmet>
-        <title>404 Not Found - Fans Coffee & Bakery</title>
-        <meta name="title" content="404 Not Found - Fans Coffee & Bakery" />
+        <title>Error 404 - Fans Coffee & Bakery</title>
+        <meta name="title" content="Error 404 - Fans Coffee & Bakery" />
         <meta
           name="description"
-          content="Si ves este mensaje significa que no has elegido el camino correcto, puedes volver a la página de inicio."
+          content="Si ves este mensaje significa que no has elegido el camino correcto, debes volver a la página de inicio."
         />
       </Helmet>
       <h1 className="mx-auto ">Error 404</h1>
@@ -34,7 +34,7 @@ export default function NotFound() {
         </Link>
       </div>
       <Link className="button" to="/contacto">
-        Contact Page
+        Contacto
       </Link>
     </div>
   );

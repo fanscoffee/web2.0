@@ -32,6 +32,9 @@ function Header() {
               <Link className="nav-link" to="/tartas-personalizadas">
                 Tartas Personalizadas
               </Link>
+              <Link className="nav-link" to="/nosotros">
+                Nosotros
+              </Link>
               <Link className="nav-link" to="/productos">
                 Productos
               </Link>

@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Helmet from "react-helmet";
 import emailjs from "emailjs-com";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
+import Helmet from "react-helmet";
 import Swal from "sweetalert2";
-import "./Contacto.scss";
+import "./Pedidos.scss";
 
-export default function Contacto() {
+function Pedidos() {
   const [Check, setCheck] = useState(false);
-  const [value, setValue] = useState();
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -20,7 +17,7 @@ export default function Contacto() {
     emailjs
       .sendForm(
         "service_41jd8bu",
-        "template_agt3tsi",
+        "template_z4kvmeo",
         e.target,
         "user_VaLr7BsCt78q4iYCxk1Mo"
       )
@@ -62,26 +59,24 @@ export default function Contacto() {
       });
     }
   };
+
   return (
     <div>
-      <div className="contacto container my-3">
-        <Helmet>
-          <title>Contacto General - Fans Coffee & Bakery</title>
-          <meta
-            name="title"
-            content="Contacto General - Fans Coffee & Bakery"
-          />
-          <meta
-            name="description"
-            content="Pagina de contacto donde podras encontrar la información para comunicarte con nosotros."
-          />
-          <link rel="canonical" href="https://fanscoffeebakery.com/contacto" />
-        </Helmet>
+      <Helmet>
+        <title>Pedidos - Fans Coffee & Bakery</title>
+        <meta name="title" content="Pedidos - Fans Coffee & Bakery" />
+        <meta
+          name="description"
+          content="Deste esta pagina puedes hacer pedidos personalizados desde formulario o ir directamente a Glovo."
+        />
+        <link rel="canonical" href="https://fanscoffeebakery.com/pedidos" />
+      </Helmet>
+      <div className="pedidos">
         <div className="row">
-          <div className="col-lg-6 col-md-12 contacto__first">
+          <div className="col-lg-6 col-md-12 pedidos__first">
             <form onSubmit={sendEmail}>
               <div className="mb-3">
-                <h3>FORMULARIO DE CONTACTO</h3>
+                <h3>PEDIDO PARA RECOGER EN TIENDA</h3>
                 <div className="mb-3">
                   <label htmlFor="nombre" className="form-label">
                     Nombre
@@ -98,17 +93,15 @@ export default function Contacto() {
                   <label htmlFor="telefono" className="form-label">
                     Teléfono
                   </label>
-                  <div className="form-control">
-                    <PhoneInput
-                      international
-                      defaultCountry="ES"
-                      value={value}
-                      onChange={setValue}
-                      name="telefono"
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    name="telefono"
+                    className="form-control"
+                    id="telefono"
+                    required
+                  />
                 </div>
-                <label htmlFor="email" className="form-label">
+                <label htmlFor="exampleInputEmail1" className="form-label">
                   Email
                 </label>
                 <input
@@ -122,7 +115,7 @@ export default function Contacto() {
               </div>
               <div className="mb-3">
                 <label htmlFor="mensaje" className="form-label">
-                  Consulta
+                  Pedido
                 </label>
                 <textarea
                   className="form-control"
@@ -131,12 +124,10 @@ export default function Contacto() {
                   rows="3"
                   required></textarea>
               </div>
-
               <div className="mb-3 form-check">
                 <input
-                  className="form-check-input"
                   type="checkbox"
-                  value="1"
+                  className="form-check-input"
                   id="contactFormAgree"
                   onChange={check}
                   required
@@ -144,50 +135,26 @@ export default function Contacto() {
                 <label className="form-check-label" htmlFor="contactFormAgree">
                   Doy mi consentimiento para el tratamiento de los datos
                   personales que facilito. He leído y acepto la{" "}
-                  <a href="./aviso-legal" className="link">
+                  <a href="./aviso-legal" className="pedidos__first-link">
                     Política de privacidad
                   </a>
                   .
                 </label>
               </div>
-
               <button type="submit" className="button" onClick={showAlert}>
                 ENVIAR
               </button>
             </form>
           </div>
 
-          <div className="col-lg-6 col-md-12 contacto__second">
-            <h3>INFORMACIÓN DE CONTACTO </h3>
-            <p>
-              Si deseas contactar con nosotros puede hacerlo de las formas
-              habituales.{" "}
-            </p>
-            <p>
-              <strong>Dirección:</strong> <br />
-              Calle Doctor Esquerdo 180, 28007, Madrid
-            </p>
-            <iframe
-              title="google"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.315829639117!2d-3.6768293491456254!3d40.40185366436702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227f0d51d1505%3A0xbfa018432bd3d379!2sFans%20Coffee%20%26%20Bakery!5e0!3m2!1ses!2ses!4v1620941613287!5m2!1ses!2ses"
-              // width="635"
-              // height="150"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"></iframe>
-            <hr />
-
-            <p>
-              <strong>Teléfono:</strong> (+34) 628 98 44 13
-            </p>
-            <hr />
-
-            <i className="mx-3 mt-3 far fa-2x fa-envelope"></i>
-            <p>
-              <strong>Atención al cliente: </strong>
-            </p>
-            <a href="mailto:fanscoffee22@gmail.com" className="link">
-              fanscoffee22@gmail.com
+          <div className="col-lg-6 col-md-12 pedidos__second">
+            <h3>PEDIDOS ONLINE </h3>
+            <a href="https://glovoapp.com/es/es/madrid/fans-coffee-and-bakery-madrid/">
+              <img
+                src="https://i.imgur.com/3K4mZZM.png"
+                alt="palmeras"
+                className="pedidos__second-img"
+              />
             </a>
           </div>
         </div>
@@ -195,3 +162,5 @@ export default function Contacto() {
     </div>
   );
 }
+
+export default Pedidos;

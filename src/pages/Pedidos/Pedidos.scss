@@ -1,0 +1,38 @@
+@use '/src/styles/abstracts/' as *;
+
+.pedidos {
+  margin: 6rem;
+
+  @include breakpoint-down(medium) {
+    margin: 1rem;
+  }
+
+  &__first{
+    &-link {
+      color: var(--clr-mustard);
+
+      &:hover {
+        color: var(--clr-brown);
+        transform: scale(1.5);
+      }
+    }
+
+    @include breakpoint-down(medium) {
+      margin: 4rem 0;
+    }
+  }
+
+  &__second {
+    &-img {
+      width: 47vw;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      
+      @include breakpoint-down(medium) {
+        width: 92vw;
+        height: auto;
+      }
+    }
+  }
+}

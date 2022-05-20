@@ -5,7 +5,6 @@ import {FaFacebook, FaInstagram, FaMapMarkerAlt, FaMailBulk} from 'react-icons/f
 
 function Footer() {
   return (
-    <div>
       <footer className="container-fluid footer">
         <div className="row text-center footer__primary">
           <div className="col-lg-4 col-md-12">
@@ -89,7 +88,7 @@ function Footer() {
           </div>
           <div className="col-lg-6 footer__secondary-copyright">
             <p className="pt-3">
-              &copy; 2021 FANS COFFEE & BAKERY - OSTELEA DIVERSA S.L.U. Todos los derechos reservados.
+              &copy; 2021 FANS COFFEE & BAKERY - FANS COFFEE FRIENDS S.L.L. Todos los derechos reservados.
             </p>
           </div>
         </div>
@@ -128,7 +127,6 @@ function Footer() {
           </div>
         </div>
       </footer>
-    </div>
   );
 }
 
