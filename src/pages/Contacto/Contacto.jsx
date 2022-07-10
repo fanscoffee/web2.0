@@ -181,14 +181,6 @@ export default function Contacto() {
               <strong>Teléfono:</strong> (+34) 628 98 44 13
             </p>
             <hr />
-
-            <i className="mx-3 mt-3 far fa-2x fa-envelope"></i>
-            <p>
-              <strong>Atención al cliente: </strong>
-            </p>
-            <a href="mailto:fanscoffee22@gmail.com" className="link">
-              fanscoffee22@gmail.com
-            </a>
           </div>
         </div>
       </div>

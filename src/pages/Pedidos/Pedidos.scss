@@ -2,12 +2,18 @@
 
 .pedidos {
   margin: 6rem;
+  max-width: 720px;
 
+  
   @include breakpoint-down(medium) {
     margin: 1rem;
+    width: 100%;
   }
 
   &__first{
+
+    max-width: 720px;
+
     &-link {
       color: var(--clr-mustard);
 
@@ -19,13 +25,12 @@
 
     @include breakpoint-down(medium) {
       margin: 4rem 0;
+      width: 100%;
     }
   }
 
   &__second {
     &-img {
-      width: 47vw;
-      height: auto;
       margin: 0;
       padding: 0;
       

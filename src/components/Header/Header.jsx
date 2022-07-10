@@ -29,9 +29,6 @@ function Header() {
               <Link className="nav-link" aria-current="page" to="/">
                 Inicio
               </Link>
-              <Link className="nav-link" to="/tartas-personalizadas">
-                Tartas Personalizadas
-              </Link>
               <Link className="nav-link" to="/nosotros">
                 Nosotros
               </Link>

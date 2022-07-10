@@ -71,9 +71,8 @@ function Pedidos() {
         />
         <link rel="canonical" href="https://fanscoffeebakery.com/pedidos" />
       </Helmet>
-      <div className="pedidos">
-        <div className="row">
-          <div className="col-lg-6 col-md-12 pedidos__first">
+      <div className="pedidos container-fluid">
+          <div className="pedidos__first">
             <form onSubmit={sendEmail}>
               <div className="mb-3">
                 <h3>PEDIDO PARA RECOGER EN TIENDA</h3>
@@ -141,23 +140,15 @@ function Pedidos() {
                   .
                 </label>
               </div>
-              <button type="submit" className="button" onClick={showAlert}>
-                ENVIAR
-              </button>
+              <div className="text-center">
+                <button type="submit" className="button" onClick={showAlert}>
+                  ENVIAR
+                </button>
+              </div>
             </form>
           </div>
 
-          <div className="col-lg-6 col-md-12 pedidos__second">
-            <h3>PEDIDOS ONLINE </h3>
-            <a href="https://glovoapp.com/es/es/madrid/fans-coffee-and-bakery-madrid/">
-              <img
-                src="https://i.imgur.com/3K4mZZM.png"
-                alt="palmeras"
-                className="pedidos__second-img"
-              />
-            </a>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
