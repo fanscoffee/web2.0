@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Building from '../../components/Building/Building'
+import CardCarousel from '../../components/CardCarousel/CardCarousel'
 
 function Productos() {
   return (
@@ -13,7 +13,7 @@ function Productos() {
           content="Disfruta de nuestra gran variedad de productos."
         />
       </Helmet>
-      <Building />
+      <CardCarousel/>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import Carousel from "../../components/Carousel/Carousel";
 import { Helmet } from "react-helmet";
 import Building from "../../components/Building/Building";
+import CardCarousel from "../../components/CardCarousel/CardCarousel";
 
 function Home() {
   return (
